@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>main page</title>
+    <title>contact page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
@@ -9,7 +9,7 @@
     <link rel="icon" href="icon.png">
 
 </head>
-<body onload="colorChange('#f96060'), fColor(), launchAnimation('index'), cookies()">
+<body onload="colorChange('#395aff'), fColor(), launchAnimation('contact')">
     <div class="main">
         <nav>
             <div><a href="index.html">PIayer69</a></div>
@@ -20,9 +20,16 @@
             </ul>
         </nav>
         <div class="center">
-            <div class="top-str">Give me idea</div>
-            <div class="cen-str">I'm piayer69.</div>
-            <div class="bot-str">I'll make it real</div>
+            <div class="container">
+                <div class="header">Contact me</div>
+                <form action="contactform.php" method="POST" class="form" autocomplete="off">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="mail" placeholder="Mail" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" cols="40" rows="5" placeholder="Your message" required></textarea>
+                    <button type="submit" name="submit">Send Message</button>
+                </form>
+            </div>
         </div>
         <div class="bottom">
             <div class="socials">
